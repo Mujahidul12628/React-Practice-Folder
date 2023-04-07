@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PriceCard from '../PriceCard/PriceCard';
 
 const PriceList = () => {
 
@@ -10,6 +11,12 @@ const PriceList = () => {
     }, [])
     return (
         <div>
+            {
+                prices.map(price => <PriceCard
+                    key={price.id}
+                    price={price}
+                ></PriceCard>)
+            }
 
         </div>
     );

@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './assets/components/Navbar/Navbar'
 import PriceList from './assets/components/PriceList/PriceList'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
