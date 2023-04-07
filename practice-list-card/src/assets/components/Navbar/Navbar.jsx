@@ -1,9 +1,12 @@
 import { list } from 'postcss';
-import React from 'react';
+import React, { useState } from 'react';
 import Link from '../Link/Link';
-import { BeakerIcon } from '@heroicons/react/24/solid'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 
 const Navbar = () => {
+
+    const [open, setOpen] = useState(false)
+
     const routes = [
         {
             id: 1,
@@ -32,10 +35,20 @@ const Navbar = () => {
         }
     ];
 
+
     return (
         <nav>
-            <BeakerIcon className="h-6 w-6 text-blue-500" />
-            <ul className='md:flex'>
+            <div className='py-2 m-0 md:hidden bg-slate-400' onClick={() => setOpen(!open)}>
+                <span>
+                    {
+                        open === true ?
+                            < XMarkIcon className="w-6 h-6 text-black" />
+                            : <Bars3Icon className="w-6 h-6 text-black" />
+                    }
+                </span>
+            </div>
+
+            <ul className={`md:flex md:static pl-8 pb-4 bg-slate-400 absolute duration-500 ${open ? 'top-10' : '-top-48'}`}>
                 {
                     routes.map(route => {
                         return <Link
