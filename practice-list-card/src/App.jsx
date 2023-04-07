@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './assets/components/Navbar/Navbar'
 import PriceList from './assets/components/PriceList/PriceList'
+import DashBoardChart from './assets/components/DashBoard/DashBoardChart'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <PriceList></PriceList>
+      <DashBoardChart></DashBoardChart>
     </div>
   )
 }
