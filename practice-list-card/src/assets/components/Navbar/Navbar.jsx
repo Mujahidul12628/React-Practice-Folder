@@ -1,5 +1,7 @@
 import { list } from 'postcss';
 import React from 'react';
+import Link from '../Link/Link';
+import { BeakerIcon } from '@heroicons/react/24/solid'
 
 const Navbar = () => {
     const routes = [
@@ -31,12 +33,21 @@ const Navbar = () => {
     ];
 
     return (
-        <div>
-            {
-                routes.map(route => <li> {route.name} </li>)
-            }
+        <nav>
+            <BeakerIcon className="h-6 w-6 text-blue-500" />
+            <ul className='md:flex'>
+                {
+                    routes.map(route => {
+                        return <Link
+                            key={route.id}
+                            route={route}
+                        ></Link>
+                    })
+                }
+            </ul>
 
-        </div>
+
+        </nav>
     );
 };
 
