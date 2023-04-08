@@ -3,7 +3,7 @@ import React from 'react';
 const UserDetails = () => {
     return (
         <div>
-            <h3>Everything about user</h3>
+            <h3>Everything about this user here</h3>
         </div>
     );
 };
