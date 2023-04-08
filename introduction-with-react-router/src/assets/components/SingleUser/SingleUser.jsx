@@ -3,7 +3,6 @@ import './sUser.css'
 import { Link } from 'react-router-dom';
 
 const SingleUser = ({ singleUser }) => {
-    console.log(singleUser);
     const { id, name, phone, email } = singleUser;
 
     return (
