@@ -17,6 +17,7 @@ import User from './assets/components/User/User';
 import Post from './assets/components/Post/Post';
 import SingleUser from './assets/components/SingleUser/SingleUser';
 import UserDetails from './assets/components/UserDetails/UserDetails';
+import PostDetails from './assets/components/PostDetails/PostDetails';
 
 // const router = createBrowserRouter([
 //   {
@@ -91,6 +92,11 @@ const router = createBrowserRouter([
         path: 'post',
         element: <Post></Post>,
         loader: () => fetch(`https://jsonplaceholder.typicode.com/posts`)
+      },
+      {
+        path: 'singlePostData/:postId',
+        element: <PostDetails></PostDetails>,
+        loader: ({ params }) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
       },
       {
         path: 'about',

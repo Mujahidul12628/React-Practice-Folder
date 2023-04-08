@@ -1,0 +1,14 @@
+.post-data {
+    border: 2px solid mediumslateblue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+p button {
+    border: 3px solid rgb(144, 7, 236);
+}
+
+button {
+    border: 3px solid rgb(255, 142, 4);
+}
