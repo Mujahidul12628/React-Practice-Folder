@@ -9,9 +9,11 @@ import {
 import About from './assets/components/About/About';
 import Blog from './assets/components/Blog/Blog';
 import Contact from './assets/components/Contact/Contact';
-import ErrorPage from './assets/components/Error/ErrorPage';
 import Header from './assets/components/Header/Header';
 import Home from './assets/components/Home/Home';
+import Main from './assets/components/Main/Main';
+import First from './assets/components/First/First';
+import User from './assets/components/User/User';
 
 // const router = createBrowserRouter([
 //   {
@@ -37,19 +39,51 @@ import Home from './assets/components/Home/Home';
 
 // ]);
 
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Main></Main>,
+//     children: [
+//       {
+//         path: '/',
+//         element: <Home></Home>
+//       },
+//       {
+//         path: 'blog',
+//         element: <Blog></Blog>
+//       },
+//       {
+//         path: 'contact',
+//         element: <Contact></Contact>
+//       }
+//     ]
+
+//   }
+// ]);
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
     children: [
       {
-        path: 'about',
-        element: <About></About>
+        path: '/',
+        element: <First></First>
       },
       {
         path: 'blog',
         element: <Blog></Blog>
       },
+      {
+        path: 'user',
+        element: <User></User>,
+        loader: () => fetch('https://jsonplaceholder.typicode.com/users')
+      },
+      {
+        path: 'about',
+        element: <About></About>
+      },
+
       {
         path: 'contact',
         element: <Contact></Contact>
@@ -61,8 +95,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
-    <Header></Header>
-    {/* <App /> */}
+    <RouterProvider router={router}> <Home></Home>  </RouterProvider>
   </React.StrictMode>,
 )
