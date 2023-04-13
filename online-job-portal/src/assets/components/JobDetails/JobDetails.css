@@ -1,0 +1,79 @@
+#job-details-data {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#requirement {
+    border: 1px solid gray;
+    padding: 2%;
+    text-align: justify;
+    border-radius: 8px;
+}
+
+hr {
+    border: 1px solid blueviolet;
+}
+
+#job-data-container {
+    background-color: rgb(237, 229, 245);
+    border: 2px solid rgb(152, 3, 252);
+    padding: 3%;
+    border-radius: 8px;
+}
+
+#btn-apply {
+    width: 100%;
+    height: 2.5rem;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+}
+
+#details-background {
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.15) 0%, rgba(152, 115, 255, 0.15) 100%);
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+    #job-details-data {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    #requirement {
+        margin: 20px 0px;
+    }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #job-details-data {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    #requirement {
+        margin: 20px 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1300px) {
+    #job-details-data {
+        margin: 0px 10px;
+    }
+}
+
+/* Laptop/desktop devices */
+@media only screen and (min-width: 1301px) {}
