@@ -8,7 +8,6 @@ const SinglePostData = ({ singlePost }) => {
     const navigate = useNavigate();
     const handleNavigation = () => {
         navigate(`/singlePostData/${id}`)
-
     }
     return (
         <div>
