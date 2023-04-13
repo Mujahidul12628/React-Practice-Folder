@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "jobImg": "https://cdn-icons-png.flaticon.com/512/9143/9143485.png",
+        "jobSector": "Web Developer",
+        "availableJob": 312,
+        "email": "webDev@gmail.com"
+    },
+    {
+        "id": 2,
+        "jobImg": "https://cdn-icons-png.flaticon.com/512/1006/1006363.png",
+        "jobSector": "Software Engineer",
+        "availableJob": 221,
+        "email": "software@gmail.com"
+    },
+    {
+        "id": 3,
+        "jobImg": "https://cdn-icons-png.flaticon.com/512/3985/3985639.png",
+        "jobSector": "Blockchain Developer",
+        "availableJob": 34,
+        "email": "blockchainDev@gmail.com"
+    },
+    {
+        "id": 4,
+        "jobImg": "https://cdn-icons-png.flaticon.com/512/7017/7017532.png",
+        "jobSector": "ML Engineer",
+        "availableJob": 84,
+        "email": "mlEngineer@gmail.com"
+    },
+    {
+        "id": 5,
+        "jobImg": "https://cdn-icons-png.flaticon.com/512/5812/5812987.png",
+        "jobSector": "Game Development",
+        "availableJob": 165,
+        "email": "gameDev@gmail.com"
+    },
+    {
+        "id": 6,
+        "jobImg": "https://cdn-icons-png.flaticon.com/512/7858/7858975.png",
+        "jobSector": "UI/UX Engineer",
+        "availableJob": 289,
+        "email": "ui/ux@gmail.com"
+    }
+]

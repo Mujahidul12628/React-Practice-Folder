@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "companyImg": "https://cdn-icons-png.flaticon.com/512/5968/5968863.png",
+        "company": "Google",
+        "position": "Network Engineer",
+        "salaryLow": 120,
+        "salaryHigh": 150,
+        "jobType": "Remote",
+        "jobSchedule": "Full Time",
+        "location": "Toronto",
+        "country": "Canada"
+    },
+    {
+        "id": 2,
+        "companyImg": "https://cdn-icons-png.flaticon.com/512/196/196566.png",
+        "company": "PayPal",
+        "position": "Finance Officer",
+        "salaryLow": 80,
+        "salaryHigh": 110,
+        "jobType": "Remote",
+        "jobSchedule": "Contractual",
+        "location": "Berlin",
+        "country": "Germany"
+    },
+    {
+        "id": 3,
+        "companyImg": "https://cdn-icons-png.flaticon.com/512/882/882700.png",
+        "company": "Intel",
+        "position": "Data Analyst",
+        "salaryLow": 22,
+        "salaryHigh": 30,
+        "jobType": "Onsite",
+        "jobSchedule": "Full Time",
+        "location": "Dhaka",
+        "country": "Bangladesh"
+    },
+    {
+        "id": 4,
+        "companyImg": "https://cdn-icons-png.flaticon.com/512/882/882747.png",
+        "company": "SamSung",
+        "position": "Software Engineer",
+        "salaryLow": 25,
+        "salaryHigh": 34,
+        "jobType": "Onsite",
+        "jobSchedule": "Full Time",
+        "location": "Dhaka",
+        "country": "Bangladesh"
+    },
+    {
+        "id": 5,
+        "companyImg": "https://cdn-icons-png.flaticon.com/512/6124/6124988.png",
+        "company": "Yahoo",
+        "position": "Software Developer",
+        "salaryLow": 130,
+        "salaryHigh": 165,
+        "jobType": "Remote",
+        "jobSchedule": "Fulltime",
+        "location": "Amsterdam",
+        "country": "Netherlands"
+    },
+    {
+        "id": 6,
+        "companyImg": "https://cdn-icons-png.flaticon.com/512/5968/5968269.png",
+        "company": "Amazon",
+        "position": "Production Executive",
+        "salaryLow": 40,
+        "salaryHigh": 50,
+        "jobType": "Onsite",
+        "jobSchedule": "Fulltime",
+        "location": "Dhaka",
+        "country": "Bangladesh"
+    },
+    {
+        "id": 7,
+        "companyImg": "https://cdn-icons-png.flaticon.com/512/5977/5977590.png",
+        "company": "Netflix",
+        "position": "UI/UX Designer",
+        "salaryLow": 100,
+        "salaryHigh": 130,
+        "jobType": "Remote",
+        "jobSchedule": "Part-time",
+        "location": "Barcelona",
+        "country": "Spain"
+    },
+    {
+        "id": 8,
+        "companyImg": "https://cdn-icons-png.flaticon.com/512/882/882707.png",
+        "company": "Motorola",
+        "position": "Software Engineer",
+        "salaryLow": 35,
+        "salaryHigh": 60,
+        "jobType": "Remote",
+        "jobSchedule": "Fulltime",
+        "location": "Mumbai",
+        "country": "India"
+    }
+]
