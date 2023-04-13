@@ -1,0 +1,12 @@
+.q {
+    border: 2px solid rgb(200, 134, 220);
+    border-radius: 5px;
+    padding: 3%;
+    margin: 1% 0 1% 0;
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.15) 0%, rgba(152, 115, 255, 0.15) 100%);
+}
+
+.q p {
+    text-align: justify;
+    margin-top: 20px;
+}
