@@ -1,0 +1,22 @@
+.home-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+#featured-job-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    border: 2px solid gr;
+}
+
+@media only screen and (max-width: 768px) {
+    #featured-job-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        border: 2px solid gr;
+        margin: 0px 10px;
+
+    }
+}
