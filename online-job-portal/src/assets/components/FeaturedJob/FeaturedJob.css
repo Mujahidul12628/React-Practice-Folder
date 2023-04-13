@@ -1,0 +1,67 @@
+#featured-job-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 5%;
+}
+
+#featured-job-card img {
+    height: 20%;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#featured-job-body {
+    line-height: 300%;
+}
+
+#featured-job-body #salary {
+    line-height: 100%;
+    margin-bottom: 17px;
+}
+
+#job-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#salary {
+    margin-left: 0px;
+    margin-top: 0;
+}
+
+#job-type {
+    margin: 5px 0 0 0px;
+}
+
+#job-type button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#link-tag {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 500px) {
+    #job-info {
+        padding: 3px 30px 1px 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #salary {
+        margin-left: 20px;
+    }
+
+    #featured-job-body #salary {
+        line-height: 300%;
+        margin-bottom: 0;
+    }
+
+}
