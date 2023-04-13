@@ -1,0 +1,52 @@
+.logoText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.25) 0%, rgba(152, 115, 255, 0.25) 100%);
+    color: rgb(9, 9, 9);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header-content img {
+    height: 30px;
+    width: 80px;
+}
+
+nav.header-content a {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 10px;
+    color: rgb(158, 2, 205);
+}
+
+nav.header-content a:hover {
+    color: rgb(0, 102, 255);
+}
+
+@media screen and (min-width: 680px) {
+    .header-content {
+        padding: 10px 30px;
+    }
+
+    nav.header-content a {
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 15px;
+    }
+
+    .header-content img {
+        height: 40px;
+        width: 120px;
+    }
+
+
+}
