@@ -1,0 +1,18 @@
+#total-job-container img {
+    height: 30%;
+    width: 30%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#total-job-container {
+    padding: 4px;
+}
+
+#total-job-container>div {
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
