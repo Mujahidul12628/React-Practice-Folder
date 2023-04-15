@@ -17,8 +17,8 @@ const displayProduct = (data) => {
           <div class="bookmark-icon">
         
           <i class="fa-solid fa-bookmark"></i>
-          <i class="fa-regular fa-bookmark"></i>
-          
+          <i onclick="handleBookmark()" class="fa-regular fa-bookmark"></i>
+
         </div>
         <div class="product-img-container">
           <img
@@ -41,6 +41,7 @@ const displayProduct = (data) => {
 
 const handleBookmark = (name, id, price) => {
 
+
   const previousBookmark = JSON.parse(localStorage.getItem("bookmark"));
 
   let bookmark = [];
@@ -55,6 +56,8 @@ const handleBookmark = (name, id, price) => {
     localStorage.setItem("bookmark", JSON.stringify(bookmark));
   }
 }
+
+
 
 
 // ! handle book mark
