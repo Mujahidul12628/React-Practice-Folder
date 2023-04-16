@@ -1,3 +1,4 @@
+// import swal from 'sweetalert';
 
 const loadProduct = () => {
   fetch("./product.json")
@@ -17,7 +18,9 @@ const displayProduct = (data) => {
           <div class="bookmark-icon">
         
           <i class="fa-solid fa-bookmark"></i>
-          <i onclick="handleBookmark()" class="fa-regular fa-bookmark"></i>
+
+          <i onclick="handleBookmark('${product.name}', '${product.id}', '${product.price}')" class="fa-regular fa-bookmark"></i>
+
 
         </div>
         <div class="product-img-container">
@@ -38,24 +41,43 @@ const displayProduct = (data) => {
   });
 };
 
-
 const handleBookmark = (name, id, price) => {
-
-
   const previousBookmark = JSON.parse(localStorage.getItem("bookmark"));
 
   let bookmark = [];
 
-  const product = { name, id, price, bookmark: true };
+  let product = {
+    name,
+    id,
+    price,
+    bookmark: true
+  };
+
+  console.log(previousBookmark); // log the previousBookmark to see its current value
 
   if (previousBookmark) {
-    console.log("Ache")
-  }
+    const isThisProductMarked = previousBookmark.find((pd) => (pd.id === id));
+    console.log(isThisProductMarked) // log isThisProductMarked to see its value
 
-  else {
-    localStorage.setItem("bookmark", JSON.stringify(bookmark));
+    if (isThisProductMarked) {
+      alert("This product is already bookmarked.");
+    }
+    else {
+      bookmark.push(...previousBookmark, product);
+      localStorage.setItem("bookmark", JSON.stringify(bookmark));
+
+    }
   }
-}
+  else {
+    bookmark.push(product)
+    localStorage.setItem("bookmark", JSON.stringify(bookmark));
+    console.log(JSON.parse(localStorage.getItem("bookmark"))); // log the bookmark array to verify it was saved to localStorage correctly
+  }
+};
+
+
+
+loadProduct();
 
 
 
@@ -103,4 +125,4 @@ const handleBookmark = (name, id, price) => {
 //   }
 // };
 
-loadProduct();
+// loadProduct();
