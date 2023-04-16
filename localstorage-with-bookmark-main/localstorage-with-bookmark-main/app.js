@@ -17,7 +17,7 @@ const displayProduct = (data) => {
     card.innerHTML = `
           <div class="bookmark-icon">
         
-          <i class="fa-solid fa-bookmark"></i>
+          <i onclick="handleRemoveBookmark( '${product.id}')" class="fa-solid fa-bookmark"></i>
 
           <i onclick="handleBookmark('${product.name}', '${product.id}', '${product.price}')" class="fa-regular fa-bookmark"></i>
 
@@ -73,6 +73,10 @@ const handleBookmark = (name, id, price) => {
     localStorage.setItem("bookmark", JSON.stringify(bookmark));
     console.log(JSON.parse(localStorage.getItem("bookmark"))); // log the bookmark array to verify it was saved to localStorage correctly
   }
+};
+
+const handleRemoveBookmark = (name, id, price) => {
+
 };
 
 
