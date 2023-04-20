@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div>
+        <div className='footer-container'>
             <h4>All Right Reserved To Mujahidul Islam</h4>
 
         </div>
