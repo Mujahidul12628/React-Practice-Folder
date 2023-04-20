@@ -1,0 +1,8 @@
+.footer-container {
+    background-color: rgb(6, 9, 30);
+    color: white;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(15, 21, 71);
+}
