@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './Blog.css'
 
@@ -9,29 +10,54 @@ const Blogs = () => {
             </div>
             <div className="question">
                 <div className="q">
-                    <h3 className='text-center'>When should you use context API?</h3>
-                    <p className='text-justify'>Context API is a useful tool for managing state in large or complex React applications. It allows for sharing of data between multiple components, reducing the need for prop drilling and simplifying state management. This can lead to more streamlined code and a more efficient development process. Context API is particularly beneficial when dealing with multiple layers of components that require the same data, as it eliminates the need to pass data through each layer manually.</p>
+                    <h4 className='text-center'>5 Tips for Writing a Great Resume</h4>
+                    <p className='text-justify'>A well-crafted resume can be the difference between landing your dream job and being passed over for the position. Here are some tips for writing a great resume:</p>
+                    <ul>
+                        <li>Keep it concise and focused on your most relevant experience and skills</li>
+                        <li>Use keywords from the job description to make sure your resume passes through automated screening systems</li>
+                        <li>Show, don't tell: Use specific examples of how you've contributed to previous employers or projects</li>
+                        <li>Include a professional summary that highlights your strengths and achievements</li>
+                        <li>Proofread your resume carefully to avoid spelling or grammatical errors</li>
+                    </ul>
                 </div>
                 <div className="q">
-                    <h3 className='text-center'>What is a custom hook?</h3>
+                    <h4 className='text-center'>How to Ace Your Job Interview</h4>
                     <p>
-                        A custom hook is a function it allows to extract reusable logic from a component. Custom hooks create user own reusable hooks that encapsulate common functionality, such as state management, data fetching, or event handling. By separating logic into a custom hook,it helps components clean and focused on UI concerns while promoting code reuse across application. Custom hooks starting with "use" and can be used in functional components just like the built-in React hooks.
+                        A job interview can be nerve-wracking, but with the right preparation, you can increase your chances of landing the job. Here are some tips for acing your job interview:
                     </p>
-
+                    <ul>
+                        <li>Research the company and the position beforehand</li>
+                        <li>Prepare answers to common interview questions</li>
+                        <li>Dress appropriately and arrive on time</li>
+                        <li>Show confidence and enthusiasm</li>
+                        <li>Ask thoughtful questions about the company and the position</li>
+                    </ul>
                 </div>
                 <div className="q">
-                    <h3 className='text-center'>What is useRef?</h3>
+                    <h4 className='text-center'>Top 5 In-Demand Skills for 2023</h4>
                     <p>
-                        useRef is a built-in React hook that returns a mutable object with a current property. This property can be assigned any value and persists between renders. useRef is commonly used to access the properties or methods of DOM elements, store values between renders, or trigger re-renders without changing the component's state. Unlike state or props, changes to the value of useRef do not cause a re-render of the component.
+                        The job market is constantly evolving, and it's important to stay up-to-date with the skills that employers are looking for. Here are the top 5 in-demand skills for 2023:
                     </p>
-
+                    <ol>
+                        <li>Artificial Intelligence and Machine Learning</li>
+                        <li>Data Analysis and Visualization</li>
+                        <li>Cloud Computing</li>
+                        <li>Cybersecurity</li>
+                        <li>Digital Marketing</li>
+                    </ol>
                 </div>
                 <div className="q">
-                    <h3 className='text-center'>What is useMemo?</h3>
+                    <h4 className='text-center'>How to Negotiate Your Salary</h4>
                     <p>
-                        useMemo is a built-in React hook that memoizes the result of a function and returns the cached value unless its dependencies have changed. This optimization can improve the performance of expensive computations, such as complex data filtering or sorting. useMemo takes a function and an array of dependencies and returns the cached result of the function unless one of the dependencies has changed, in which case the function is re-evaluated.
+                        Negotiating your salary can be intimidating, but it's important to know your worth and advocate for yourself. Here are some tips for negotiating your salary:
                     </p>
-
+                    <ul>
+                        <li>Research the salary range for the position and industry</li>
+                        <li>Highlight your skills and accomplishments during the negotiation</li>
+                        <li>Be confident and assertive</li>
+                        <li>Consider non-salary benefits, such as vacation time or flexible work arrangements</li>
+                        <li>Be willing to walk away if the offer is not competitive</li>
+                    </ul>
                 </div>
             </div>
         </div>
