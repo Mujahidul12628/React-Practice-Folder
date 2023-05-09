@@ -15,11 +15,7 @@ const Header = () => {
                 <ActiveLink to="/appliedJob">Applied Job</ActiveLink>
                 <ActiveLink to="/statistics">Statistics</ActiveLink>
                 <ActiveLink to="/blogs">Blog</ActiveLink>
-
-
             </div>
-
-            <button className="text-white border-2 rounded shadow-lg border-primary bg-primary"><span className='fst-italic'>Start Applying</span></button>
         </nav>
     );
 };

@@ -1,7 +1,6 @@
 .img-container img {
 
-    height: 285px;
-    margin-top: 20;
+    height: 300px;
 }
 
 .container-content p {
@@ -14,6 +13,10 @@
     background-color: rgb(224, 224, 252);
 }
 
+#text-container {
+    max-width: 25rem;
+}
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
 
@@ -24,6 +27,21 @@
     #button-div {
         display: flex;
         justify-content: center;
+    }
+
+    #text-container {
+        max-width: 20rem;
+        padding: 2px 15px;
+
+    }
+
+    .img-container img {
+        height: 250px;
+    }
+
+    #text-container {
+        max-width: 25rem;
+        padding-left: 3px;
     }
 }
 

@@ -5,7 +5,7 @@
 }
 
 .header-content {
-    background: linear-gradient(90deg, rgba(126, 144, 254, 0.25) 0%, rgba(152, 115, 255, 0.25) 100%);
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.30) 0%, rgba(152, 115, 255, 0.30) 100%);
     color: rgb(9, 9, 9);
     display: flex;
     justify-content: space-between;
@@ -32,6 +32,11 @@ nav.header-content a:hover {
     color: rgb(0, 102, 255);
 }
 
+#start-applying {
+    display: none;
+    border: none;
+}
+
 @media screen and (min-width: 680px) {
     .header-content {
         padding: 10px 30px;
@@ -46,6 +51,10 @@ nav.header-content a:hover {
     .header-content img {
         height: 40px;
         width: 120px;
+    }
+
+    #start-applying {
+        display: block;
     }
 
 
