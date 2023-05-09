@@ -12,7 +12,7 @@ const Header = () => {
             <div className="">
 
                 <ActiveLink to="/">Home</ActiveLink>
-                <ActiveLink to="/appliedJob">Applied Job</ActiveLink>
+                {/* <ActiveLink to="/appliedJob">Applied Job</ActiveLink> */}
                 <ActiveLink to="/statistics">Statistics</ActiveLink>
                 <ActiveLink to="/blogs">Blog</ActiveLink>
             </div>

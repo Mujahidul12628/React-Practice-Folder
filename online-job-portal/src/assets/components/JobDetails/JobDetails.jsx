@@ -4,6 +4,8 @@ import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import './JobDetails.css'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetails = () => {
 
@@ -29,6 +31,7 @@ const JobDetails = () => {
 
     const navigate = useNavigate()
     const handleApplyNowClick = () => {
+        alert('Do you want add this job');
         // let appliedJobsCount = Number(localStorage.getItem('appliedJobsCount')) || 0;
         // localStorage.setItem('appliedJobsCount', appliedJobsCount + 1);
         navigate(`/appliedJob/${id}`)
@@ -91,11 +94,6 @@ const JobDetails = () => {
 
                     {/* <Button id='btn-apply' className='mt-3 col 12' variant="primary" onClick={() => handleApplyNowClick(details)}>Apply Now</Button> */}
                     <Button id='btn-apply' className='mt-3 col 12' variant="primary" onClick={handleApplyNowClick}>Apply Now</Button>
-
-                    {/* <Link id='btn-apply' to={`/job-details/${id}`}>
-                        <Button variant="primary">View Details
-                        </Button>{' '}
-                    </Link> */}
                 </div>
 
 
