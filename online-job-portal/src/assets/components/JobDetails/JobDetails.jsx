@@ -95,8 +95,6 @@ const JobDetails = () => {
                     {/* <Button id='btn-apply' className='mt-3 col 12' variant="primary" onClick={() => handleApplyNowClick(details)}>Apply Now</Button> */}
                     <Button id='btn-apply' className='mt-3 col 12' variant="primary" onClick={handleApplyNowClick}>Apply Now</Button>
                 </div>
-
-
             </div>
         </div>
 
