@@ -6,9 +6,11 @@ import AvailableJob from '../AvailableJob/AvailableJob';
 import TopContainer from '../TopContainer/TopContainer';
 import FeaturedJob from '../FeaturedJob/FeaturedJob';
 import { useLoaderData } from 'react-router-dom';
+import DynamicTittle from '../Hook/DynamicTittle';
 
 const Home = () => {
     const jobCompany = useLoaderData()
+    DynamicTittle('Home')
 
     return (
 

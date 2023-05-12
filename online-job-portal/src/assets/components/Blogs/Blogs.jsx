@@ -1,8 +1,10 @@
 
 import React from 'react';
 import './Blog.css'
+import DynamicTittle from '../Hook/DynamicTittle';
 
 const Blogs = () => {
+    DynamicTittle('Blogs')
     return (
         <div>
             <div className='my-3 py-5' id='details-background'>
